@@ -1,182 +1,41 @@
-
-h4,h5,h6{
-  margin:0;
+/* Basic styling for the modal and page */
+body {
+  font-family: Arial, sans-serif;
 }
 
-
-h2{
-  font-size: 2em;
-  margin: 1em auto;
-}
-h2>span[class="material-symbols-outlined"]{
-  font-size: 30px;
-  font-weight: 500;
-
-}
-h6{
-  font-size: 1.1em;
-  font-weight: 900;
+#myModal {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  min-width: 800px;
-
-}
-
-.sidebar {
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
   color: white;
-  display: flex;
-  flex-direction: column;
-  min-width: 300px;
-  background-color: rgb(109, 181, 245);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 5;
+button:hover {
+  background-color: #0056b3;
 }
 
-    .headers{
-      display:flex;
-      flex-direction: column;
-      height:80px;
-      margin-bottom: 200px;
-    }
-      .searchHeader{
-        display:flex;
-        width:auto;
-        height: 40px;
-        justify-content: space-between;
-        margin-bottom: 100px;
-
-      }
-      .inputWrapper
-      {
-        display: flex;
-        align-items: center;
-
-        flex-grow: 9;
-      }
-      .profileWrapper
-      { justify-content: end;
-        align-items: center;
-        flex-grow: 1;
-        display:flex;
-        flex-direction: row;
-        gap:0.5em;
-      } 
-      .searchHeader>span{
-        flex-grow: 0;
-
-      }
-      img{
-        width:3em;
-        border-radius: 14px;
-
-      }
-      input {
-      margin-left: 1em;
-       border: 1px solid #ddd;
-       border-radius: 14px;
-       width: 70%;       
-       }
-      .actionHeader{
-        display:flex;
-        justify-content: space-between;
-         }
-         .profile{
-
-         display: flex;
-         gap:1em;
-         }
-         .buttons
-         {
-          display:flex;
-          gap:0.7em;
-         }
-            .actionButton{
-              color: white;
-              font-weight: bold;
-              height:3em;
-              background-color: rgb(46, 131, 235);
-              padding: 0 2em;
-              border-radius: 20px;
-              border-width: 0;
-            }
-
-    .main{
-      display: grid;
-      grid-template-columns: 4fr 1fr;
-    }
-      .projects{
-        grid-row:1/3 ;
-        display : grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px;
-        gap:1.3em;
-
-
-
-      }
-      .projects>h2{
-        margin: 0px;
-
-        grid-column:1/-1 ;
-      }
-        .project
-        {
-          display:flex;
-          flex-direction: column;
-          background-color: aquamarine;
-          border-radius: 0.5em;
-          padding: 1em;
-          width:80%;
-          border-left:0.4em rgb(217, 217, 3) solid;
-        }
-         .actions
-         {
-          margin-top:2em;
-          align-self:end;
-         }
-         .title
-         {
-          font-weight: 600;
-          margin-bottom: 1em;
-         }
-         .projectContent
-         {
-
-         }
-      .announcements{
-        flex-grow:1;
-      }
-      .trends{
-          flex-grow:1;
-          grid-column:2;
-      }
-
-.navigation {
-  display: flex;
-  flex-direction: column;
+/* Input styling */
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
-  ul{
-    list-style: none;
-  }
-  ul>li{
-    display: flex;
-    align-items: center;
-    margin:0.5em 0;
-  }
-  li>span
-  {
-    margin-right:0.5em;
-  }
 
-
-.options {
-  display: flex;
-  flex-direction: column;
+/* Styling for the text display */
+#displayText {
+  margin-top: 20px;
+  font-size: 18px;
 }
